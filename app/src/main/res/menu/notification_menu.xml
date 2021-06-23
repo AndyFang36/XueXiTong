@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <item android:title="新建群聊" />
+  <item android:title="添加朋友" />
+  <item android:title="建文件夹" />
+  <item android:title="批量编辑" />
+</menu>

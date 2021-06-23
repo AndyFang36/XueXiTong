@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="410dp"
+  android:layout_height="wrap_content">
+
+  <ImageView
+    android:id="@+id/ivNote"
+    android:layout_width="54dp"
+    android:layout_height="48dp"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="8dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/ic_baseline_sticky_note_2_24" />
+
+  <TextView
+    android:id="@+id/tvNoteTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    android:text="标题"
+    android:textSize="20sp"
+    app:layout_constraintStart_toEndOf="@+id/ivNote"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/tvNoteCreationTime"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:text="笔记创建时间"
+    android:textColor="#B2B2B2"
+    android:textSize="12sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.278"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tvNoteTitle" />
+
+  <TextView
+    android:id="@+id/tvNoteId"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:text="1"
+    app:layout_constraintStart_toEndOf="@+id/textView17"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/tvNoteContent"
+    android:layout_width="374dp"
+    android:layout_height="70dp"
+    android:layout_marginTop="8dp"
+    android:text="笔记内容"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/ivNote" />
+
+  <TextView
+    android:id="@+id/textView17"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="240dp"
+    android:layout_marginTop="8dp"
+    android:text="#"
+    app:layout_constraintStart_toEndOf="@+id/tvNoteTitle"
+    app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
